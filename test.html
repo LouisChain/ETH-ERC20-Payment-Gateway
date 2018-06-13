@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+        
+        </div>
+
+        <script>
+
+            $.post("http://localhost:8000/payment", {
+                transaction_id: '123456', 
+                amount: 4,
+                to_address: '0xb3AAAae47070264f3595c5032eE94b620A583a39',
+                gas_limit: 500000,
+                private_key: '86ae109eb5346b097f0abab442e5a259c004de4b02b3310897a520d3c431ab58',
+                user_id: 1
+            }, function(result){
+                console.log(result);
+            });
+        </script>
+    </body>
+</html>
