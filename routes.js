@@ -12,11 +12,6 @@ module.exports = function(app) {
 
         check('amount').isDecimal(),
 
-        check('to_address')
-            .not().isEmpty()
-            .trim()
-            .escape(),
-
         check('gas_limit').isDecimal(),
 
         check('user_id')

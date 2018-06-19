@@ -12,7 +12,9 @@ var config = {
 
     confirm_after_block: 4,
 
-    cron_time : '*/1 * * * *'
+    cron_time: '*/1 * * * *',
+
+    destination_address: '0x0e52c423da80c4ab69b2b0f0e77021f3a7e1ba85'
 };
 
 module.exports = config
