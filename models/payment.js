@@ -4,6 +4,7 @@ var schema = mongoose.Schema({
     tx:             {type: 'String', required: true, index:true},
     transaction_id: {type: 'String', required: true, index:true},
     amount:         {type: 'Number', required: true},
+    from_address:   {type: 'String', required: true, index:true},
     to_address:     {type: 'String', required: true},
     gas_limit:      {type: 'Number', required: true},
     user_id:        {type: 'Number', required: true, index:true},
